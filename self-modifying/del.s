@@ -21,7 +21,7 @@ flushp
 stw r3, 0x20(r0)
 call DEL_STACK
 
-/* Second level of deletion, moves DEL_PROG into 0x20 */
+
 DEL_LOAD_2:
 movia r2, DEL_PROG
 movia r3, DEL_PROG_END
@@ -97,6 +97,13 @@ br DEL_PROGRAM_LOOP
 
 DEL_PROG_END:
 
-.equ delfrom, 0x1000
+/* Second level of deletion, moves DEL_PROG into 0x20 */
+.equ delfrom, stack_start /* 0x1000 */
 .equ stack_start, 0x007FFFFC
 .equ SSEG_address, 0x10000020
+
+
+
+
+
+/* We skynet now? */
