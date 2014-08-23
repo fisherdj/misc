@@ -1,0 +1,9 @@
+This repository contains various miscellaneous files, partly (entirely) for the
+purpose of showing off (especially to potential employers). This file will be
+updated as I add new files:
+
+self-modifying: code that modifies itself at runtime
+self-modifying/del.s: code that deletes itself along with whatever else it can
+self-modifying/fib.s: code that re-writes immediate values to yield a new term
+	of the fibonacci sequence every time it runs.
+README: a readme explaining what this repository is and what files it contains
